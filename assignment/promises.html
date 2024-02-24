@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/common.css">
+    <script src="js/common.js"></script>
+    <script src="js/promise.js"></script>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-sm bg-warning">
+        <div class="container">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="callback.html">Callback</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="promises.html">Promises</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Closure</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Hoisting</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Closure</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <div class="container mt-4">
+      <h1><strong>Promises</strong> in JavaScript</h1>
+      <hr />
+      <h3 class="text-center font-weight-bold">Web API Description</h3>
+      <table class="table table-hover table-responsive">
+        <thead>
+          <tr>
+            <th>Web API</th>
+            <th>Url</th>
+            <th>Description</th>
+            <th>Column Name</th>
+          </tr>
+        </thead>
+        <tbody class="text-primary font-weight-bold">
+          <tr>
+            <td>Random Word Api</td>
+            <td>https://api.wordnik.com</td>
+            <td>To get random words</td>
+            <td>Word</td>
+          </tr>
+          <tr>
+            <td>Dictionary Api</td>
+            <td>https://api.dictionaryapi.dev/api/v2/entries/</td>
+            <td>To get the meaning of randomly generated word</td>
+            <td>Pronunciation, Meaning, Example</td>
+          </tr>
+        </tbody>
+      </table>
+      <hr />
+
+      <h2>Word : <span id="word"></span></h2>
+
+      <table class="table table-hover">
+        <thead class="thead-dark">
+          <tr>
+            <th>Word</th>
+            <th>Pronunciation</th>
+            <th>Meaning</th>
+            <th>Example</th>
+          </tr>
+        </thead>
+        <tbody id="word-details">
+          <tr>
+            <td id="word"></td>
+            <td id="pronunciation"></td>
+            <td id="meaning"></td>
+            <td id="example"></td>
+          </tr>
+        </tbody>
+      </table>
+
+      <div class="mt-4 ml-4">
+        <strong class="align-items-center">Random Dictionary</strong>
+        <button type="button" class="btn btn-primary text-center" onclick="getRandomWord();" name="getRandomWord">Get Random Word</button>
+      </div>
+      <!--<div class="row mt-4">
+        <div class="col-3">
+          <h4>Word</h4>
+        </div>
+        <div class="col-3">
+          <h4>Pronunciation</h4>
+        </div>
+        <div class="col-3">
+          <h4>Meaning</h4>
+        </div>
+        <div class="col-3">
+          <h4>Example</h4>
+        </div>
+      </div>-->
+    </div>
+  </body>
+</html>
